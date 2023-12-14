@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter as Router } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { BlogContextProvider, blogContext } from "./context/blogContext";
+import { BlogContextProvider } from "./context/blogContext";
 
 import App from "./App";
 
