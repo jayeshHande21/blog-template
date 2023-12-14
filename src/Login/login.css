@@ -1,12 +1,19 @@
 /* Login.css */
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
 .login-container {
-  max-width: 400px;
+  max-width: 700px;
   margin: 50px auto;
-  padding: 20px;
+  padding: 30px;
   border: 1px solid #ccc;
   border-radius: 5px;
   text-align: center;
+  box-sizing: border-box;
 }
 
 h2 {
@@ -20,7 +27,8 @@ label {
 
 input {
   width: 100%;
-  padding: 8px;
+  box-sizing: border-box;
+  padding: 12px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -29,7 +37,7 @@ input {
 button {
   background-color: #4285f4;
   color: white;
-  padding: 10px;
+  padding: 20px;
   border: none;
   border-radius: 3px;
   cursor: pointer;

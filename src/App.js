@@ -8,10 +8,10 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import "./styles.css";
 
 export default function App() {
-  const { loggedIn, setLoggedIn, handleLogin } = useContext(blogContext);
+  const { loggedIn } = useContext(blogContext);
 
   return (
-    <div className="App">
+    <div className="App" style={{ minHeight: "100vh" }}>
       <Routes>
         <Route
           path="/"

@@ -1,12 +1,12 @@
 import { useContext } from "react";
 import { blogContext } from "../context/blogContext";
-import React, { useState } from "react";
+import React from "react";
 import "./login.css";
-import { toast } from "react-toastify";
+
 import "react-toastify/dist/ReactToastify.css";
 
 export const Login = () => {
-  const { loggedIn, setLoggedIn, handleLogin } = useContext(blogContext);
+  const { handleLogin } = useContext(blogContext);
 
   return (
     <div className="login-container">

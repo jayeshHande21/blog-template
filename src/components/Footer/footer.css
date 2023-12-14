@@ -1,11 +1,17 @@
+/* footer.css */
+
 footer {
   background-color: grey;
   padding: 10px;
   text-align: center;
+  margin-top: 155px;
+  margin-bottom: 0px;
 }
+
 footer h3 {
   color: white;
 }
+
 footer p,
 li {
   color: white;
