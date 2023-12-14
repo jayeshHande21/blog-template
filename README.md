@@ -23,8 +23,27 @@ The footer contains contact information:
 - **Email:** info@reactblogapp.com
 - **Phone:** 123-456-7890
 
-Feel free to explore the app and contribute to its development!
+# React Template Task
 
----
+Thank you for considering my submission for the React template task. Below are the instructions to run the React application.
+
+## Prerequisites
+
+Make sure you have the following installed on your machine:
+
+- Node.js: [Download and Install Node.js](https://nodejs.org/)
+
+## Getting Started
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/jayeshHande21/blog-template.git
+
+- Start the React application:
+
+ ```bash
+npm start
+
 
 
