@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext } from "react";
+import { Header } from "./components/Header/header";
+import { BlogPost } from "./components/Blog/blogPost";
+import { Footer } from "./components/Footer/footer";
+import { Login } from "./Login/login";
+import { blogContext } from "./context/blogContext";
+import { Routes, Route, Navigate } from "react-router-dom";
+import "./styles.css";
 
-function App() {
+export default function App() {
+  const { loggedIn, setLoggedIn, handleLogin } = useContext(blogContext);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route
+          path="/"
+          element={loggedIn ? <Navigate to="/home" /> : <Login />}
+        />
+        <Route
+          path="/home"
+          element={
+            loggedIn ? (
+              <>
+                <Header />
+                <BlogPost />
+                <Footer />
+              </>
+            ) : (
+              <Navigate to="/" />
+            )
+          }
+        />
+      </Routes>
     </div>
   );
 }
-
-export default App;

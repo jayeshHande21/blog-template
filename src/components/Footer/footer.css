@@ -1,0 +1,44 @@
+footer {
+  background-color: grey;
+  padding: 10px;
+  text-align: center;
+}
+footer h3 {
+  color: white;
+}
+footer p,
+li {
+  color: white;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+}
+
+.contact {
+  text-align: left;
+}
+
+.contact p {
+  margin: 5px 0;
+}
+
+.social ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social li {
+  margin-bottom: 5px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+}
